@@ -10,7 +10,7 @@
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+  <table style="width:100%;max-width:900px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
@@ -19,7 +19,11 @@
               <p style="text-align:center">
                 <name>Baiyu Shi</name>
               </p>
-              <p>I'm an incoming Mechanical Engineering PhD student at Stanford University. Previously, I did my undergraduate at UC Berkeley with double majors in Bioengineering and Electrical Engineering and Computer Science (EECS), and was fortunate to be advised by Professor <a href="http://polypedal.berkeley.edu/">Robert Full</a>, Professor <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>, and Professor <a href="https://www.marriottlab.com/">Gerard Marriott</a>. My research interests lie at the intersection of robotics, mechatronics, sensing, biology, and machine learning.
+              <p>I'm an incoming Mechanical Engineering PhD student at Stanford University. 
+                Previously, I did my undergraduate at UC Berkeley with double majors in Bioengineering and Electrical Engineering and Computer Science (EECS), 
+                and was fortunate to be advised by Professor <a href="http://polypedal.berkeley.edu/">Robert Full</a>, 
+                Professor <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>, and Professor <a href="https://www.marriottlab.com/">Gerard Marriott</a>. 
+                My research interests lie at the intersection of biology, electrical engineering, mechanical engineering, machine learning, and robotics.
               </p>
               <p style="text-align:center">
                 <a href="mailto:skybuy@berkeley.edu">Email</a> &nbsp/&nbsp
@@ -38,12 +42,50 @@
             <td style="padding:20px;width:100%;vertical-align:middle">
               <heading>Research</heading>
               <p>
-                I'm broadly interested in robot manipulation, perception and mechanical design. I'm also very interested in wearable devices, biosensors, and diagonostic devices. Below, you can find my publications.
+                I'm broadly interested in novel sensing modalities, human-robot interaction, mechanical design, medical robotics, and robot learning and manipulation.
+                I'm also very interested in wearables, biosensors, BioMEMS and diagonostic devices. Below, you can find my publications.
               </p>
             </td>
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          
+          <tr onmouseout="slipbag_stop()" onmouseover="slipbag_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div id='slipbag' class='hidden'><img src="images/2023_slipbagging.gif"></div>
+              <div id='slipbagpic'>
+                <a href="images/2023_slipbagging.gif"><img src="images/slipbag.png"></a>
+              </div>
+              <script type="text/javascript">
+                function slipbag_start() {
+                  document.getElementById('slipbag').style.display = 'inline';
+                  document.getElementById('slipbagpic').style.display = 'none';
+                }
+
+                function slipbag_stop() {
+                  document.getElementById('slipbag').style.display = 'none';
+                  document.getElementById('slipbagpic').style.display = 'inline';
+                }
+                slipbag_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <!-- <a href="https://drive.google.com/file/d/1shvItvx_8Sb8QNXhrOXkuRmx2618iwNJ/view?usp=sharing">
+                <papertitle>Volumetric Semantic Segmentation using Pyramid Context Features</papertitle>
+              </a> -->
+              <papertitle>Bagging by Learning to Singulate Layers Using Interactive Perception</papertitle>
+              <br>
+              Lawrence Yunliang Chen, <strong>Baiyu Shi</strong>, Roy Lin, Daniel Seita, Ayah Ahmad, Richard Cheng, Thomas Kollar, David Held, Ken Goldberg
+              <br>
+              <em>IEEE/RSJ International Conference on Intelligent Robots and Systems (IROS)</em>, 2023
+              <br>
+              <a href="https://arxiv.org/pdf/2303.16898.pdf">ArXiv</a> &nbsp/&nbsp
+              <a href="https://sites.google.com/view/slip-bagging/">Project Website</a> 
+              <p>
+                We develop a system that grasps a single layer of plastic bags and fabrics using purely visual feedback and improve our previous bagging algorithm.
+              </p>
+            </td>
+          </tr>
 
           <tr onmouseout="autobag_stop()" onmouseover="autobag_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
@@ -74,7 +116,7 @@
               <br>
               <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2023
               <br>
-              <a href="https://arxiv.org/abs/2210.17217">ArXiv</a> 
+              <a href="https://arxiv.org/abs/2210.17217">ArXiv   </a> &nbsp/&nbsp
               <a href="https://sites.google.com/view/autobag">Project Website</a> 
               <p>
                 We develop an algorithm to enable a bimanual robot to open an unstructured bag, to insert objects into the bag, and to lift the bag for transport.
@@ -112,7 +154,7 @@
               <br>
               <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2023
               <br>
-              <a href="https://arxiv.org/abs/2211.02293">ArXiv</a> 
+              <a href="https://arxiv.org/abs/2211.02293">ArXiv   </a> &nbsp/&nbsp
               <a href="https://sites.google.com/berkeley.edu/autolab-avsi">Project Website</a> 
               <p>
                 We formulate a problem of automatic vascular shunt insertion and develop an algorithm to perform Automated Vascular Shunt Insertion (AVSI) using a da Vinci Research Kit (dVRK).
