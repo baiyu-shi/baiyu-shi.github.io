@@ -105,6 +105,44 @@ name {
   font-size: 32px;
 }
 
+.media-cell {
+  padding: 20px;
+  width: 220px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.thumb-cell {
+  padding: 20px;
+  width: 220px;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.thumb-cell img {
+  width: 200px;
+  height: 200px;
+  display: block;
+  margin: 0 auto;
+  object-fit: cover;
+}
+
+.media-frame {
+  width: 200px;
+  height: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.media-frame-panel img {
+  max-width: 200px;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+  display: block;
+}
+
 .one {
   width: 160px;
   height: 160px;

@@ -19,7 +19,7 @@
               <p style="text-align:center">
                 <name>Baiyu Shi</name>
               </p>
-              <p>I'm a 1st. year Mechanical Engineering PhD student at Stanford University advised by Professor <a href="https://baogroup.stanford.edu/people/zhenan-bao">Zhenan Bao</a>. 
+              <p>I'm a 3rd. year Mechanical Engineering PhD candidate at Stanford University advised by Professor <a href="https://baogroup.stanford.edu/people/zhenan-bao">Zhenan Bao</a>. 
                 Previously, I did my undergraduate at UC Berkeley with double majors in Bioengineering and Electrical Engineering and Computer Science (EECS), 
                 and was fortunate to be advised by Professor <a href="http://polypedal.berkeley.edu/">Robert Full</a>, 
                 Professor <a href="https://goldberg.berkeley.edu/">Ken Goldberg</a>, and Professor <a href="https://www.marriottlab.com/">Gerard Marriott</a>. 
@@ -49,9 +49,53 @@
           </tr>
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          
+
+          <tr onmouseout="dexskin_stop()" onmouseover="dexskin_start()">
+            <td class="media-cell">
+              <div class="media-frame">
+                <div id='dexskin' class="media-frame-panel">
+                  <img src="images/DexSkin.gif" alt="DexSkin project preview">
+                </div>
+                <div id='dexskinpic' class="media-frame-panel">
+                  <a href="images/DexSkin.gif"><img src="images/dexskin.png" alt="DexSkin project thumbnail"></a>
+                </div>
+              </div>
+              <script type="text/javascript">
+                function dexskin_start() {
+                  document.getElementById('dexskin').style.display = 'block';
+                  document.getElementById('dexskinpic').style.display = 'none';
+                }
+
+                function dexskin_stop() {
+                  document.getElementById('dexskin').style.display = 'none';
+                  document.getElementById('dexskinpic').style.display = 'block';
+                }
+                dexskin_stop()
+              </script>
+            </td>
+            <td width="75%" valign="middle">
+              <!-- <a href="https://drive.google.com/file/d/1shvItvx_8Sb8QNXhrOXkuRmx2618iwNJ/view?usp=sharing">
+                <papertitle>Volumetric Semantic Segmentation using Pyramid Context Features</papertitle>
+              </a> -->
+              <papertitle>DexSkin: High-Coverage Conformable Robotic Skin for Learning Contact-Rich Manipulation</papertitle>
+              <br>
+              Suzannah Wistreich*, <strong>Baiyu Shi*</strong>, Stephen Tian*, Samuel Clarke, Michael Nath, Chengyi Xu, Zhenan Bao, Jiajun Wu (* equal contribution)
+              <br>
+              <em>Conference on Robot Learning (CoRL)</em>, 2025
+              <br>
+              <span style="color: red;"><strong>
+                (Oral ~5.7%)
+              </strong></span><br>
+              <a href="https://arxiv.org/abs/2509.18830">ArXiv</a> &nbsp/&nbsp
+              <a href="https://dex-skin.github.io/">Project Website</a> 
+              <p>
+                We achieve all-around tactile sensorization of cylindrical robotic fingers and apply the resulting high-fidelity tactile cues to contact-rich manipulation tasks including pen reorientation, box packaging, and berry sorting.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="slipbag_stop()" onmouseover="slipbag_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td class="thumb-cell">
               <div id='slipbag' class='hidden'><img src="images/2023_slipbagging.gif"></div>
               <div id='slipbagpic'>
                 <a href="images/2023_slipbagging.gif"><img src="images/slipbag.png"></a>
@@ -91,7 +135,7 @@
           </tr>
 
           <tr onmouseout="autobag_stop()" onmouseover="autobag_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td class="thumb-cell">
               <div id='autobag' class='hidden'><img src="images/2022bs_autobag_160.gif"></div>
               <div id='autobagpic'>
                 <a href="images/2022bs_autobag_160.gif"><img src="images/autobag_160.png"></a>
@@ -128,7 +172,7 @@
           </tr>
 
           <tr onmouseout="autoshunt_stop()" onmouseover="autoshunt_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td class="thumb-cell">
               <div id='autoshunt' class='hidden'><img src="images/autoshunt_160speed.gif"></div>
               <div id='autoshuntpic'>
                 <a href="images/autoshunt_160speed.gif"><img src="images/autoshunt_160.png"></a>
